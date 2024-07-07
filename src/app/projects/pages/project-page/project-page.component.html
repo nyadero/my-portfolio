@@ -1,0 +1,38 @@
+<section class="max-w-max-width mx-auto py-2 max-sm:px-2">
+
+    <div *ngIf="project">
+        <h3 class="capitalize">{{project.name}}</h3>
+        <div
+            class="my-2 p-2 dark:bg-slate-950 flex items-start justify-between max-sm:flex-col">
+            <div class="flex items-center gap-2">
+                <h3>{{project.projectCategory}}</h3>
+                <h3>{{project.projectStatus}}</h3>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <a href="{{project.github}}">github</a>
+                <a *ngIf="project.projectCategory === 'Mobile' " href="/projects/download">Download APK</a>
+                <a href="{{project.liveUrl}}">liveUrl</a>
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+    <!-- images -->
+    <div style="height: 400px;">
+        project images
+    </div>
+    <div>
+        {{project.description}}
+    </div>
+
+
+    <div *ngIf="!project">
+        <h3>project not found</h3>
+    </div>
+
+
+</section>
+
+<!-- {{project | json}} -->
