@@ -4,6 +4,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { RouterModule } from '@angular/router';
+import { NodataComponent } from './components/nodata/nodata.component';
 
 
 
@@ -12,6 +13,7 @@ import { RouterModule } from '@angular/router';
     NavbarComponent,
     FooterComponent,
     LayoutComponent,
+    NodataComponent,
   ],
   imports: [
     CommonModule,
@@ -20,6 +22,7 @@ import { RouterModule } from '@angular/router';
   exports: [
     NavbarComponent,
     FooterComponent,
+    NodataComponent
   ]
 })
 export class SharedModule { }

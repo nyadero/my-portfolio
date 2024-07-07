@@ -5,13 +5,15 @@ import { CoreRoutingModule } from './core-routing.module';
 import { AboutComponent } from './pages/about/about.component';
 import { SharedModule } from '../shared/shared.module';
 import { ProjectsModule } from '../projects/projects.module';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 
 
 @NgModule({
   declarations: [
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    CarouselComponent
   ],
   imports: [
     CommonModule,

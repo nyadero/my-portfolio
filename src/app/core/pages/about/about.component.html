@@ -1,23 +1,53 @@
 <section class="">
-    <!-- {{!-- work experience --}} -->
-    <div class="min-h-80 bg-white py-2 dark:bg-slate-950">
-      <div class="max-w-max-width mx-auto">
-    work experience
+  <!-- {{!-- work experience --}} -->
+  <div class="min-h-80 bg-white py-2 dark:bg-slate-950">
+    <div class="max-w-max-width mx-auto">
+      <h3>work experience</h3>
+
+      <!-- show experience if available -->
+      <div *ngIf="experiences.length">
+        experience available
+      </div>
+
+      <!-- show nodata if not available -->
+      <div *ngIf="!experiences.length">
+        <app-nodata message="Nyadero has not updated his work experience"></app-nodata>
       </div>
     </div>
-  
-    <!-- {{!-- education and certifications --}} -->
-     <div class="min-h-80 py-2">
-          <div class="max-w-max-width mx-auto">
-            <h3 class="mb-5 text-lg">Education, Certifications and Licences</h3>
-    education
-      </div>
+  </div>
+
+  <!-- {{!-- education and certifications --}} -->
+  <div class="min-h-80 py-2">
+    <div class="max-w-max-width mx-auto">
+      <h3 class="mb-5 text-lg">Education, Certifications and Licences</h3>
+           
+      <!-- show education, certifications and licences if available -->
+       <div *ngIf="certifications.length">
+         experience available
+       </div>
+
+       <!-- show nodata if not available -->
+        <div *ngIf="!certifications.length">
+         <app-nodata message="Nyadero has not updated his certifications"></app-nodata>
+        </div>
     </div>
-  
-    <!-- {{!-- reviews --}} -->
-    <div class="min-h-80 bg-white py-2">
-      <div class="max-w-max-width mx-auto">
-        testimonials
-      </div>
-    </div> 
-  </section>
+  </div>
+
+  <!-- {{!-- reviews --}} -->
+  <div class="min-h-80 bg-white py-2">
+    <div class="max-w-max-width mx-auto">
+      <h3>testimonials</h3>
+           
+      <!-- show experience if available -->
+       <div *ngIf="testimonials.length">
+         experience available
+       </div>
+
+       <!-- show nodata if not available -->
+        <div>
+         <app-nodata message="Nyadero has no reviews/testimonials"></app-nodata>
+        </div>
+    </div>
+  </div>
+</section>
+
