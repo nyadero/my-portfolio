@@ -4,7 +4,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { RouterModule } from '@angular/router';
-import { WakatimeComponent } from './components/wakatime/wakatime.component';
 
 
 
@@ -13,7 +12,6 @@ import { WakatimeComponent } from './components/wakatime/wakatime.component';
     NavbarComponent,
     FooterComponent,
     LayoutComponent,
-    WakatimeComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +20,6 @@ import { WakatimeComponent } from './components/wakatime/wakatime.component';
   exports: [
     NavbarComponent,
     FooterComponent,
-    WakatimeComponent
   ]
 })
 export class SharedModule { }
