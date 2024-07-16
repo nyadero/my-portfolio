@@ -1,9 +1,9 @@
 <div class="carousel">
     <img *ngFor="let image of images; let i = index" 
-         [src]="image.src" 
-         [alt]="image.alt" 
+         src="{{image.src}}" 
+         alt="{{image.alt}}" 
          [class.active]="i === currentIndex"
-         class="w-full h-full">
-    
+         class="w-full rounded-md shadow-md object-cover max-sm:w-full">
+        
   </div>
   

@@ -1,0 +1,16 @@
+<div class="bg-white shadow-md p-2 rounded">
+    <h3 class="capitalize text-lg mb-1">{{experience.title}}</h3>
+    <h3 class="mb-2 text-blue-400 capitalize text-lg">{{experience.employer}}</h3>
+    <div>
+        {{experience.from}} - {{experience.to}}
+    </div>
+
+    <div class="my-2">
+        <p>{{experience.description}}</p>
+    </div>
+
+    <div class="flex gap-2 mt-2">
+      <span class="bg-blue-400 text-white rounded shadow p-1" *ngFor="let stack of experience.stack">{{stack}}</span>
+    </div>
+    
+</div>

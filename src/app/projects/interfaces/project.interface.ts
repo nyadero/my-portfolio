@@ -6,6 +6,7 @@ export interface ProjectInterface{
     description: string;
     tags: string[];
     photos: string[];
+    coverPic: string;
     liveUrl: string;
     github: string;
 }

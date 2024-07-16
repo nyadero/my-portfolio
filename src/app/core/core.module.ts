@@ -6,6 +6,8 @@ import { AboutComponent } from './pages/about/about.component';
 import { SharedModule } from '../shared/shared.module';
 import { ProjectsModule } from '../projects/projects.module';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { CertificationComponent } from './components/certification/certification.component';
 
 
 
@@ -13,7 +15,9 @@ import { CarouselComponent } from './components/carousel/carousel.component';
   declarations: [
     HomeComponent,
     AboutComponent,
-    CarouselComponent
+    CarouselComponent,
+    ExperienceComponent,
+    CertificationComponent
   ],
   imports: [
     CommonModule,

@@ -5,17 +5,21 @@ import { ProjectPageComponent } from './pages/project-page/project-page.componen
 import { RouterModule } from '@angular/router';
 import { ProjectsRoutingModule } from './projects-routing.module';
 import { ProjectComponent } from './components/project/project.component';
+import { SharedModule } from '../shared/shared.module';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
     ProjectsComponent,
     ProjectPageComponent,
-    ProjectComponent
+    ProjectComponent,
+    CarouselComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
-    ProjectsRoutingModule
+    ProjectsRoutingModule,
+    SharedModule
   ],
   exports: [
     ProjectComponent

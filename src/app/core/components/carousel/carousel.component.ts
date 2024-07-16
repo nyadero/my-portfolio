@@ -7,10 +7,10 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 })
 export class CarouselComponent implements OnInit, OnDestroy {
   images = [
-    { src: 'https://via.placeholder.com/600x400/ff7f7f/333333?text=Image+1', alt: 'Image 1' },
-    { src: 'https://via.placeholder.com/600x400/ffff7f/333333?text=Image+3', alt: 'Image 3' },
-    { src: 'https://via.placeholder.com/600x400/7fff7f/333333?text=Image+4', alt: 'Image 4' },
-    { src: 'https://via.placeholder.com/600x400/7f7fff/333333?text=Image+5', alt: 'Image 5' }
+    { src: './assets/images/mobileapps.jpg', alt: 'Mobile apps' },
+    { src: './assets/images/data-analysis.jpg', alt: 'Data analysis' },
+    { src: './assets/images/websites.jpg', alt: 'Websites' },
+    { src: './assets/images/backend-development.jpg', alt: 'Backend apis' }
   ];
   
   currentIndex = 0;

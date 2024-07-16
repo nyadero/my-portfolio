@@ -1,4 +1,4 @@
-<section class="min-h-96 bg-inherit py-4 flex items-center max-sm:px-2 bg-white dark:bg-slate-950" id="">
+<section class="min-h-96 bg-inherit py-4 flex items-center max-sm:px-2  dark:bg-slate-950" id="">
     <div class="max-w-max-width mx-auto flex items-center justify-center flex-col">
         <div class="w-40 h-40 rounded-full shadow-md overflow-hidden flex items-center justify-center mb-3">
             <img src="assets/images/nyadero.jpg" alt="nyadero brian" width="100%" height="100%"
@@ -7,7 +7,7 @@
 
         <h3 class="text-xl font-medium mb-2">Hello, I am Nyadero Brian </h3>
         <p class="text-md mb-2 text-wrap w-3/5 text-center max-sm:w-full">
-            I am a full-stack developer with a lot of experience on the backend and highly skilled at tech like Java and
+            I am a software engineer with a lot of experience on the backend and highly skilled at tech like Java and
             Kotlin.
             Besides these, I also work with Android, Angular, Nodejs, Python and much more.
         </p>
@@ -32,7 +32,7 @@
             </a>
 
             <a href="assets/nyadero's_cv.pdf" target="_blank">
-                <button class="bg-blue-500 rounded shadow p-2 text-white">View Resume</button>
+                <button class="bg-blue-500 rounded shadow p-2 text-white text-sm">View Resume</button>
             </a>
 
         </div>
@@ -40,157 +40,87 @@
 </section>
 
 <!-- {{!-- skills --}} -->
-<div class="min-h-fit py-4 max-sm:px-2 dark:bg-black">
+<div class="min-h-fit py-4 max-sm:px-2 dark:bg-slate-950">
     <div class="max-w-max-width mx-auto">
         <h3 class="mb-3 text-lg font-medium">My Skills And Tech Stack</h3>
-
         <section class="flex items-center justify-center flex-wrap gap-4 py-4">
             <!-- {{!-- java --}} -->
-            <div class="h-10 w-10 ">
-                <img src="assets/images/logos/languages/java.svg" class="w-full h-full object-cover"
-                    alt="java programming language">
+            <div class="h-10 w-10 " *ngFor="let techStack of techStack">
+                <img src="{{techStack.logo}}" class="w-full h-full object-cover"
+                    alt="{{techStack.name}}">
             </div>
-
-            <!-- {{!-- kotlin --}} -->
-            <div class="h-10 w-10 ">
-                <img src="assets/images/logos/languages/kotlin.svg" class="w-full h-full object-cover"
-                    alt="kotlin programming language">
-            </div>
-
-            <!-- {{!-- typescript --}} -->
-            <div class="h-10 w-10 ">
-                <img src="assets/images/logos/languages/typescript.svg" class="w-full h-full object-cover"
-                    alt="typescript programming language">
-            </div>
-            <!-- {{!-- javascript --}} -->
-            <div class="h-10 w-10 ">
-                <img src="assets/images/logos/languages/javascript.svg" class="w-full h-full object-cover"
-                    alt="javascript programming language">
-            </div>
-            <!-- {{!-- c++ --}} -->
-            <div class="h-10 w-10 ">
-                <img src="assets/images/logos/languages/c++.svg" class="w-full h-full object-cover"
-                    alt="c++ programming language">
-            </div>
-
-            <!-- {{!-- python --}} -->
-            <div class="h-10 w-10 ">
-                <img src="assets/images/logos/languages/python.svg" class="w-full h-full object-cover"
-                    alt="python programming language">
-            </div>
-
-            <!-- {{!-- angular --}} -->
-            <div class="h-10 w-10 ">
-                <img src="assets/images/logos/frameworks/angular.svg" class="w-full h-full object-cover" alt="angular">
-            </div>
-
-            <!-- {{!-- android --}} -->
-            <div class="h-10 w-10 ">
-                <img src="assets/images/logos/frameworks/android.svg" class="w-full h-full object-cover" alt="android">
-            </div>
-
-            <!-- {{!-- spring --}} -->
-            <div class="h-10 w-10 ">
-                <img src="assets/images/logos/frameworks/spring.svg" class="w-full h-full object-cover" alt="spring">
-            </div>
-
-            <!-- {{!-- nodejs --}} -->
-            <div class="h-10 w-10 ">
-                <img src="assets/images/logos/frameworks/nodejs.svg" class="w-full h-full object-cover" alt="nodejs">
-            </div>
-
-            <!-- {{!-- nestjs --}} -->
-            <div class="h-10 w-10 ">
-                <img src="assets/images/logos/frameworks/Nestjs.svg" class="w-full h-full object-cover" alt="nestjs">
-            </div>
-
-            <!-- {{!-- mysql --}} -->
-            <div class="h-10 w-10 ">
-                <img src="assets/images/logos/databases/mysql.svg" class="w-full h-full object-cover" alt="mysql">
-            </div>
-
-            <!-- {{!-- postgresql --}} -->
-            <div class="h-10 w-10 ">
-                <img src="assets/images/logos/databases/postgresql.svg" class="w-full h-full object-cover"
-                    alt="postgresql">
-            </div>
-
-            <!-- {{!-- mongo --}} -->
-            <div class="h-10 w-10 ">
-                <img src="assets/images/logos/databases/mongodb.svg" class="w-full h-full object-cover" alt="mongo">
-            </div>
-
-            <!-- {{!-- redis --}} -->
-            <div class="h-10 w-10 ">
-                <img src="assets/images/logos/databases/redis.svg" class="w-full h-full object-cover" alt="redis">
-            </div>
-
-            <!-- {{!-- docker --}} -->
-            <div class="h-10 w-10 ">
-                <img src="assets/images/logos/cloud/docker.svg" class="w-full h-full object-cover" alt="docker">
-            </div>
-
-            <!-- {{!-- firebase --}} -->
-            <div class="h-10 w-10 ">
-                <img src="assets/images/logos/cloud/firebase.svg" class="w-full h-full object-cover" alt="firebase">
-            </div>
-
-            <!-- {{!-- github --}} -->
-            <div class="h-10 w-10 ">
-                <img src="assets/images/logos/icons/github.svg" class="w-full h-full object-cover" alt="github">
-            </div>
-
         </section>
+    </div>
+
+        <!-- soft skills --> 
+         <!-- <div class="">
+            <h3 class="text-lg capitalize">Soft Skills</h3>
+
+            <div class="flex items-center justify-center flex-wrap gap-4 py-4">
+               <h3 *ngFor="let skill of softSkills" class="bg-blue-500 p-2 rounded shadow text-white text-sm">{{skill}}</h3>
+            </div>
+         </div> -->
+
+         <!-- preferred comany culture and industry -->
+         <!-- <div class="">
+            <h3 class="text-lg capitalize">Preferred company culture</h3>
+
+            <div class="flex items-center justify-center flex-wrap gap-4 py-4">
+                <h3 *ngFor="let skill of softSkills" class="bg-blue-500 p-2 rounded shadow text-white text-sm">{{skill}}</h3>
+             </div>
+         </div> -->
+
+    <!-- </div> -->
 
     </div>
 
     <!-- {{!-- services --}} -->
-    <div class="min-h-fit py-5 bg-white max-sm:px-2 flex items-center flex-col justify-center dark:bg-slate-950">
+    <div class="min-h-fit py-5  max-sm:px-2 flex items-center flex-col justify-center dark:bg-slate-950">
         <div class="max-w-max-width mx-auto ">
-            <h3 class="mb-3">What I offer</h3>
+            <h3 class="mb-3 text-lg font-semibold">My Services</h3>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-sm:grid-cols-1 gap-4 h-full">
                 <!-- {{!-- frontend --}} -->
-                <div class="bg-blue-500 p-2 rounded-md shadow">
+                <div class="bg-white p-2 rounded-md shadow">
                     <div class="h-20 w-20">
                         <img src="/images/nyadero.jpg" alt="" class="w-full h-full object-cover ">
                     </div>
-                    <h3 class="text-white my-1 text-start">Frontend development</h3>
-                    <p class="text-white">
+                    <h3 class="my-1 font-medium text-lg capitalize">Data Analytics</h3>
+                    <p class="">
                         I design and develop static websites or landing pages for businesses, schools, etc. I also do
                         frontend development for websites that consume data from
                         a backend api using Angular.
                     </p>
                 </div>
                 <!-- {{!-- backend --}} -->
-                <div class="bg-blue-500 p-2 rounded-md shadow ">
+                <div class="bg-white p-2 rounded-md shadow">
                     <div class="h-20 w-20">
                         <img src="/images/nyadero.jpg" alt="" class="w-full h-full object-cover ">
                     </div>
-                    <h3 class="text-white my-1">Backend development</h3>
-                    <p class="text-white">
+                    <h3 class="my-1 font-medium text-lg capitalize">Backend development</h3>
+                    <p class="">
                         I develop highy scalable, maintanable and performant restful and graphql apis. I use springboot,
                         nestjs and
                         dotnet
                     </p>
                 </div>
                 <!-- {{!-- fullstack --}} -->
-                <div class="bg-blue-500 p-2 rounded-md shadow ">
+                <div class="bg-white p-2 rounded-md shadow">
                     <div class="h-20 w-20">
                         <img src="/images/nyadero.jpg" alt="" class="w-full h-full object-cover ">
                     </div>
-                    <h3 class="text-white my-1">Fullstack Development</h3>
-                    <p class="text-white">
+                    <h3 class="my-1 font-medium text-lg">Website Development</h3>
+                    <p class="">
                         I develop dynamic websites with databases using nestjs mvc and handlebars templating engine.
                     </p>
                 </div>
                 <!-- {{!-- mobile application --}} -->
-                <div class="bg-blue-500 p-2 rounded-md shadow  text-white">
+                <div class="bg-white p-2 rounded-md shadow">
                     <div class="h-20 w-20">
                         <img src="/images/nyadero.jpg" alt="" class="w-full h-full object-cover ">
                     </div>
-                    <h3 class="text-white my-1">Mobile apps development</h3>
-                    <p class="text-white">
+                    <h3 class="my-1 font-medium text-lg capitalize">Mobile apps</h3>
+                    <p class="text-base">
                         I do native android development using java and kotlin.
                     </p>
                 </div>
@@ -199,10 +129,10 @@
     </div>
 
     <!-- {{!-- recent projects --}} -->
-    <div class="min-h-80 py-2 max-sm:px-2 dark:bg-black">
+    <div class="min-h-80 py-5 mb-4 max-sm:px-2 dark:bg-black">
         <div class="max-w-max-width mx-auto">
             <div class="my-2 flex items-center justify-between">
-                <h3 class="font-semibold text-lg">My Latest Projects</h3>
+                <h3 class="font-medium text-lg">My Latest Projects</h3>
                 <a href="/projects" class="text-blue-500 dark:text-blue-500 underline-offset-1">All Projects</a>
             </div>
 
@@ -212,15 +142,55 @@
             </div>
 
             <div *ngIf="!projects.length">
-               <h3>No projects added</h3>
+               <app-nodata message="Nyadero has not added any projects" ></app-nodata>
             </div>
         </div>
     </div>
 
-    <!-- {{!-- pinned github --}} -->
+    <!-- {{!-- what i am looking for --}} -->
+    <div class="min-h-80 py-5  max-sm:px-2 dark:bg-black">
+        <div class="max-w-max-width mx-auto flex items-center gap-5 max-sm:flex-col">
+            <div class="w-1/2">
+                <h3 class="font-medium text-lg mb-4">What I am looking for</h3>
+                <p class="text-lg">
+                    I'm actively seeking for junior to senior developer roles in the either android or backend development.
+                    My preferred organizations are those that embrace technology, encourage innovation, support professional development,
+                     and offer opportunities to work on impactful projects, possibly within startup or tech-forward environments.
+                     If you're hiring for such roles or know of any relevant opportunities, feel free to reach out to me!
+                </p>
+            </div>
+            
+
+            <!-- image -->
+             <div class="w-1/2">
+                <div class="flex items-center justify-center">
+                    <img src="assets/images/opportunities.jpg" class="w-full object-cover rounded-md shadow"
+                    alt="what i am looking for"/>
+                </div>
+             </div>
+        </div>
+     </div>
+
+
+     <div class="min-h-80 py-2 dark:bg-slate-950">
+        <div class="max-w-max-width mx-auto">
+          <h3 class="text-lg mb-2 capitalize">work experience</h3>
+    
+          <!-- show experience if available -->
+          <div *ngIf="experiences.length" class="grid grid-cols-1 md:grid-cols-2 max-sm:grid-cols-1 gap-5">
+            <app-experience *ngFor="let experience of experiences" [experience]="experience" ></app-experience>
+          </div>
+    
+          <!-- show nodata if not available -->
+          <div *ngIf="!experiences.length">
+            <app-nodata message="Nyadero has not updated his work experience"></app-nodata>
+          </div>
+        </div>
+      </div>
+
 
     <!-- {{!-- project discussion --}} -->
-    <div class="min-h-80 py-2 flex justify-center max-sm:px-2 dark:bg-black">
+    <div class="min-h-80 py-5 flex justify-center max-sm:px-2 dark:bg-black">
         <div
             class="max-w-max-width mx-auto flex items-center justify-center gap-5 max-sm:px-2 max-sm:flex-col flex-auto">
             <div class="flex-1">
@@ -249,9 +219,11 @@
             </div>
 
             <!-- {{!-- image --}} -->
-           
-             <div class="w-1/2">
-                <app-carousel></app-carousel>
+            <div class="w-1/2">
+                <div class="flex items-center justify-center">
+                    <img src="assets/images/mobileapps.jpg" class="w-full object-cover rounded-md shadow-md"
+                    alt="contact me"/>
+                </div>
              </div>
 
 

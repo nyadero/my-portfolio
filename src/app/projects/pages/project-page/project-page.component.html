@@ -1,7 +1,7 @@
-<section class="max-w-max-width mx-auto py-2 max-sm:px-2">
+<section class="max-w-max-width mx-auto py-2 max-sm:px-2 min-h-screen">
 
     <div *ngIf="project">
-        <h3 class="capitalize">{{project.name}}</h3>
+        <h3 class="capitalize text-blue-500 mb-2">{{project.name}}</h3>
         <div
             class="my-2 p-2 dark:bg-slate-950 flex items-start justify-between max-sm:flex-col">
             <div class="flex items-center gap-2">
@@ -12,7 +12,7 @@
             <div class="flex items-center gap-2">
                 <a href="{{project.github}}">github</a>
                 <a *ngIf="project.projectCategory === 'Mobile' " href="/projects/download">Download APK</a>
-                <a href="{{project.liveUrl}}">liveUrl</a>
+                <a *ngIf="project.liveUrl" href="{{project.liveUrl}}">liveUrl</a>
             </div>
         </div>
 
@@ -20,13 +20,21 @@
     </div>
 
     <!-- images -->
-    <div style="height: 400px;">
-        project images
-    </div>
     <div>
-        {{project.description}}
+        <app-carousel [images]="project.photos"></app-carousel>
     </div>
 
+
+    <div class="my-5">
+        <p>
+            {{project.description}}
+        </p>
+    </div>
+
+    <!-- tech stack -->
+    <div class="flex gap-2 items-center flex-wrap">
+        <h5 *ngFor="let tag of project.tags" class="capitalize text-blue-500 border p-1 rounded text-sm">{{tag}}</h5>
+    </div>
 
     <div *ngIf="!project">
         <h3>project not found</h3>
@@ -35,4 +43,3 @@
 
 </section>
 
-<!-- {{project | json}} -->

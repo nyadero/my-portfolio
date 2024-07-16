@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ExperienceInterface } from '../../interface/experience.interface';
 import { EducationInterface } from '../../interface/education.interface';
+import { experienceData } from '../../data/experience.data';
+import { educationData } from '../../data/education.data';
+import { testimonialData } from '../../data/testimonials.data';
 
 @Component({
   selector: 'app-about',
@@ -13,7 +16,9 @@ export class AboutComponent implements OnInit{
    testimonials: any[] = []; 
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this.experiences = experienceData;
+    this.certifications = educationData;
+    this.testimonials = testimonialData
   }
 
 }

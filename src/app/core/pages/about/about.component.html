@@ -1,12 +1,12 @@
-<section class="">
+<section class="max-sm:p-2">
   <!-- {{!-- work experience --}} -->
   <div class="min-h-80 bg-white py-2 dark:bg-slate-950">
     <div class="max-w-max-width mx-auto">
-      <h3>work experience</h3>
+      <h3 class="text-lg mb-2 capitalize">work experience</h3>
 
       <!-- show experience if available -->
-      <div *ngIf="experiences.length">
-        experience available
+      <div *ngIf="experiences.length" class="grid grid-cols-1 md:grid-cols-2 max-sm:grid-cols-1 gap-5">
+        <app-experience *ngFor="let experience of experiences" [experience]="experience" ></app-experience>
       </div>
 
       <!-- show nodata if not available -->
@@ -22,8 +22,8 @@
       <h3 class="mb-5 text-lg">Education, Certifications and Licences</h3>
            
       <!-- show education, certifications and licences if available -->
-       <div *ngIf="certifications.length">
-         experience available
+       <div *ngIf="certifications.length" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-sm:grid-cols-1 gap-5">
+         <app-certification [certification]="certification" *ngFor="let certification of certifications"></app-certification> 
        </div>
 
        <!-- show nodata if not available -->
@@ -36,15 +36,15 @@
   <!-- {{!-- reviews --}} -->
   <div class="min-h-80 bg-white py-2">
     <div class="max-w-max-width mx-auto">
-      <h3>testimonials</h3>
+      <h3 class="mb-5 text-lg">Testimonials and Reviews</h3>
            
       <!-- show experience if available -->
        <div *ngIf="testimonials.length">
-         experience available
+         testimonials available
        </div>
 
        <!-- show nodata if not available -->
-        <div>
+        <div *ngIf="!testimonials.length">
          <app-nodata message="Nyadero has no reviews/testimonials"></app-nodata>
         </div>
     </div>

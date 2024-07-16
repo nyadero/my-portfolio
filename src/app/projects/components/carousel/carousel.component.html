@@ -1,0 +1,11 @@
+<div class="carousel-container bg-slate-200 rounded shadow">
+    <button class="prev" (click)="prev()">Previous</button>
+    
+    <div class="carousel">
+      <div  class="slide">
+        <img [src]="images[currentIndex]" alt="Carousel Image" class="image object-cover rounded shadow-md">
+      </div>
+    </div>
+    
+    <button class="next" (click)="next()">Next</button>
+</div>

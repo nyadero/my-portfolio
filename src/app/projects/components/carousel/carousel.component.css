@@ -1,0 +1,47 @@
+.carousel-container {
+    position: relative;
+  }
+  
+  .carousel {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    /* min-height: 350px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
