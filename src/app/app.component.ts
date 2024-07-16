@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { LoadingService } from './shared/service/loading.service';
+import { ThemeService } from './shared/service/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,11 @@ import { LoadingService } from './shared/service/loading.service';
 export class AppComponent {
   title = 'nyadero';
 
-  constructor(public loadingService: LoadingService) {}
-
-
+  constructor(
+    public loadingService: LoadingService,
+    public readonly themeService: ThemeService
+  ){
+    themeService.loadTheme();
+  }
+  
 }
