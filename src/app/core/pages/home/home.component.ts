@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit{
 
  
   ngOnInit(): void {
-    this.projects = projectsData.slice(0, 4);
+    this.projects = projectsData.slice(0, 3);
     this.experiences = experienceData;
     this.certifications = educationData;
     this.testimonials = testimonialData;
@@ -32,4 +32,5 @@ export class HomeComponent implements OnInit{
      this.techStack = techStack;
   }
 
+  
 }

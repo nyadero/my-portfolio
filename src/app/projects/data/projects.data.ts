@@ -22,7 +22,7 @@ export const projectsData: ProjectInterface[] = [
     },
     {
         id: "dreamwheels",
-        projectCategory: ProjectCategoryEnum.Web,
+        projectCategory: ProjectCategoryEnum.Backend,
         projectStatus: ProjectStatusEnum.Completed,
         description: "This is a simple springboot project to allow users to create and manage their dream garages."
             + "It is a basic or simple project that i am using to practice what i have learnt in the spring and springboot ecosystem.",

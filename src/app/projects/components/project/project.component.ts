@@ -7,5 +7,14 @@ import { ProjectInterface } from '../../interfaces/project.interface';
   styleUrls: ['./project.component.css']
 })
 export class ProjectComponent {
+
    @Input() project!: ProjectInterface;
+   isReadingMore: boolean = false;
+
+
+  toggleReadMore() {
+    this.isReadingMore = !this.isReadingMore;
+  }
+
+  
 }

@@ -1,7 +1,6 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { LayoutComponent } from "../shared/components/layout/layout.component";
-import { ProjectPageComponent } from "./pages/project-page/project-page.component";
 import { ProjectsComponent } from "./pages/projects/projects.component";
 
 const routes: Routes = [
@@ -12,12 +11,7 @@ const routes: Routes = [
             {
                 path: "",
                 component: ProjectsComponent
-            },
-            {
-                path: ":id",
-                component: ProjectPageComponent
-            },
-
+            }
         ]
     }
 ];

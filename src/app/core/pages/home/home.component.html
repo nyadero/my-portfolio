@@ -40,7 +40,7 @@
 </section>
 
 <!-- {{!-- skills --}} -->
-<div class="min-h-fit py-4 max-sm:px-2">
+<div class="min-h-fit py-4 max-sm:px-3">
     <div class="max-w-max-width mx-auto">
         <h3 class="mb-3 text-lg font-medium">My Skills And Tech Stack</h3>
         <section class="flex items-center justify-center flex-wrap gap-4 py-4">
@@ -52,30 +52,11 @@
         </section>
     </div>
 
-        <!-- soft skills --> 
-         <!-- <div class="">
-            <h3 class="text-lg capitalize">Soft Skills</h3>
-
-            <div class="flex items-center justify-center flex-wrap gap-4 py-4">
-               <h3 *ngFor="let skill of softSkills" class="bg-blue-500 p-2 rounded shadow text-white text-sm">{{skill}}</h3>
-            </div>
-         </div> -->
-
-         <!-- preferred comany culture and industry -->
-         <!-- <div class="">
-            <h3 class="text-lg capitalize">Preferred company culture</h3>
-
-            <div class="flex items-center justify-center flex-wrap gap-4 py-4">
-                <h3 *ngFor="let skill of softSkills" class="bg-blue-500 p-2 rounded shadow text-white text-sm">{{skill}}</h3>
-             </div>
-         </div> -->
-
-    <!-- </div> -->
-
+     
     </div>
 
     <!-- {{!-- services --}} -->
-    <div class="min-h-fit py-5  max-sm:px-2 flex items-center flex-col justify-center">
+    <div class="min-h-fit py-5  max-sm:px-3 flex items-center flex-col justify-center">
         <div class="max-w-max-width mx-auto ">
             <h3 class="mb-3 text-lg font-semibold">My Services</h3>
 
@@ -125,7 +106,7 @@
     </div>
 
     <!-- {{!-- recent projects --}} -->
-    <div class="min-h-80 py-5 mb-4 max-sm:px-2">
+    <div class="min-h-80 py-5 mb-4 max-sm:px-3">
         <div class="max-w-max-width mx-auto">
             <div class="my-2 flex items-center justify-between">
                 <h3 class="font-medium text-lg">My Latest Projects</h3>
@@ -133,7 +114,7 @@
             </div>
 
             <!-- {{!-- projects list --}} -->
-            <div *ngIf="projects.length" class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4 gap-2">
+            <div *ngIf="projects.length" class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 <app-project *ngFor="let project of projects" [project]="project"></app-project>
             </div>
 
@@ -144,9 +125,9 @@
     </div>
 
     <!-- {{!-- what i am looking for --}} -->
-    <div class="min-h-80 py-5  max-sm:px-2">
+    <div class="min-h-80 py-5  max-sm:px-3">
         <div class="max-w-max-width mx-auto flex items-center gap-5 max-sm:flex-col">
-            <div class="w-1/2">
+            <div class="w-1/2 max-sm:w-full">
                 <h3 class="font-medium text-lg mb-4">What I am looking for</h3>
                 <p class="text-lg">
                     I'm actively seeking for junior to senior developer roles in the either android or backend development.
@@ -154,11 +135,15 @@
                      and offer opportunities to work on impactful projects, possibly within startup or tech-forward environments.
                      If you're hiring for such roles or know of any relevant opportunities, feel free to reach out to me!
                 </p>
+                 <h3 class="my-4">My Soft Skills:</h3>
+                <div class="flex items-center flex-wrap gap-2">
+                    <span class="p-2 text-blue-500 border rounded-md border-blue-700 text-sm" *ngFor="let skill of softSkills">{{skill}}</span>
+                </div>
             </div>
             
 
             <!-- image -->
-             <div class="w-1/2">
+             <div class="w-1/2 max-sm:w-full">
                 <div class="flex items-center justify-center">
                     <img src="assets/images/opportunities.jpg" class="w-full object-cover rounded-md shadow"
                     alt="what i am looking for"/>
@@ -168,7 +153,7 @@
      </div>
 
 
-     <div class="min-h-80 py-2">
+     <div class="min-h-80 py-2 max-sm:p-3">
         <div class="max-w-max-width mx-auto">
           <h3 class="text-lg mb-2 capitalize">work experience</h3>
     
@@ -189,7 +174,7 @@
     <div class="min-h-80 py-5 flex justify-center max-sm:px-2">
         <div
             class="max-w-max-width mx-auto flex items-center justify-center gap-5 max-sm:px-2 max-sm:flex-col flex-auto">
-            <div class="flex-1">
+            <div class="w-1/2 max-sm:w-full">
                 <h3 class="mb-2 text-lg">Let's discuss your project</h3>
                 <p>
                     I am open for freelance jobs. Contact me so that we can discuss your project.
@@ -215,7 +200,7 @@
             </div>
 
             <!-- {{!-- image --}} -->
-            <div class="w-1/2">
+            <div class="w-1/2 max-sm:w-full">
                 <div class="flex items-center justify-center">
                     <img src="assets/images/mobileapps.jpg" class="w-full object-cover rounded-md shadow-md"
                     alt="contact me"/>

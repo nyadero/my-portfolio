@@ -132,7 +132,7 @@ export const techStack: TechStack[] = [
 export const experienceData: ExperienceInterface[] = [
   {
     title: "Software Developer Intern",
-    stack: ["Python", "Javascript", "Mysql", "Django", "Tailwincss", "Linux"],
+    stack: ["Python", "Javascript", "Mysql", "Django", "Tailwincss", "Nodejs"],
     from: "2023 May",
     to: "2023 September",
     employer: "Lake Basin Development Authority",
@@ -143,11 +143,11 @@ export const experienceData: ExperienceInterface[] = [
       + "computing devices"
   },
   {
-    title: "Software Developer Intern",
-    stack: ["Python", "Javascript", "Mysql", "Django", "Tailwincss", "Linux"],
+    title: "Freelance Software Developer",
+    stack: ["Java", "Javascript", "Mysql", "Postgresql", "Kotlin", "Tailwincss", "Angular"],
     from: "2023 May",
     to: "2023 September",
-    employer: "Lake Basin Development Authority",
+    employer: "Individuals and upwork",
     employmentType: EmploymentTypeEnum.Internship,
     isCurrent: true,
     description: "Software Developer Intern responsible for developing a docs_center system used by the institution to manage their documents."
