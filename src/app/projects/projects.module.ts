@@ -6,6 +6,7 @@ import { ProjectsRoutingModule } from './projects-routing.module';
 import { ProjectComponent } from './components/project/project.component';
 import { SharedModule } from '../shared/shared.module';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     CommonModule,
     RouterModule,
     ProjectsRoutingModule,
-    SharedModule
+    SharedModule,
+    MatIconModule
   ],
   exports: [
     ProjectComponent

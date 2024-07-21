@@ -1,9 +1,13 @@
 <div class="carousel-container bg-slate-200 rounded shadow">
-    <button class="prev" (click)="prev()">Previous</button>
+    <button class="prev" (click)="prev()">
+        <mat-icon>skip_previous</mat-icon>
+    </button>
     
-    <div class="h-60 bg-blue-500 rounded-md shadow-md flex items-center justify-center">
+    <div class="h-60 rounded-md shadow-md flex items-center justify-center">
         <img [src]="images[currentIndex]" alt="Carousel Image" class="w-full h-full image object-fill rounded shadow-md bg-slate-400">
     </div>
     
-    <button class="next" (click)="next()">Next</button>
+    <button class="next" (click)="next()">
+        <mat-icon>skip_next</mat-icon>
+    </button>
 </div>
